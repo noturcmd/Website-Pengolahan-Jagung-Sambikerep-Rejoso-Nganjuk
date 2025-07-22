@@ -40,6 +40,3 @@ Route::prefix('galeri')->name('galeri.')->group(function () {
     Route::get('/foto', [GaleriController::class, 'foto'])->name('foto');
     Route::get('/video', [GaleriController::class, 'video'])->name('video');
 });
-
-// Contact form submission
-Route::post('/kontak', [KontakController::class, 'submit'])->name('kontak.submit');
